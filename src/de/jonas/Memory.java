@@ -6,7 +6,9 @@ import de.jonas.memory.MemoryGui;
 
 public class Memory {
 
-    public static final MemoryCard[] CARDS = new MemoryCard[] {
+    //<editor-fold desc="CONSTANTS">
+    /** Alle {@link MemoryCard Memory-Karten} die in diesem Spiel vorkommen und immer wieder neu verteilt werden. */
+    public static final MemoryCard[] CARDS = new MemoryCard[]{
         new MemoryCard("/de/jonas/res/card1.jpg", "Karte1", true),
         new MemoryCard("/de/jonas/res/card1.jpg", "Karte1", true),
         new MemoryCard("/de/jonas/res/card2.jpg", "Karte2", true),
@@ -25,14 +27,25 @@ public class Memory {
         new MemoryCard("/de/jonas/res/card8.jpg", "Karte8", true),
     };
 
+    /** Die Ansicht einer noch umgedrehten {@link MemoryCard}. */
     public static final MemoryCard TURN = new MemoryCard("/de/jonas/res/turn.jpg", "Umgedreht", true);
+    /** Die Ansicht einer {@link MemoryCard}, die schon richtig zugeordnet wurde. */
     public static final MemoryCard FORBIDDEN = new MemoryCard("/de/jonas/res/forbidden.jpg", "Verboten", true);
+    //</editor-fold>
 
+
+    //<editor-fold desc="setup and start">
+    /**
+     * Die Main-Methode der Anwendung, die vor allen anderen Methoden als erstes aufgerufen wird.
+     *
+     * @param args .
+     */
     public static void main(String[] args) {
         // initialize game-data
         new GameData();
         // open memory-interface
         new MemoryGui();
     }
+    //</editor-fold>
 
 }
