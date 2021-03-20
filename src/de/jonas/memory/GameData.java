@@ -3,7 +3,7 @@ package de.jonas.memory;
 /**
  * In der {@link GameData} werden alle Informationen zu der einzelnen Spielrunde gesammelt.
  */
-public class GameData {
+public final class GameData {
 
     //<editor-fold desc="CONSTANTS">
     /** Die Instanz-Variable der {@link GameData}. */

@@ -20,7 +20,7 @@ import java.awt.event.MouseListener;
  * Das {@link WinGui} wird bei einem Sieg aufgerufen. Ein Sieg entsteht durch das richtige zuordnen aller {@link
  * MemoryCard Karten}.
  */
-public class WinGui {
+public final class WinGui {
 
     //<editor-fold desc="CONSTANTS">
     /** Die Breite des {@link WinGui}. */
